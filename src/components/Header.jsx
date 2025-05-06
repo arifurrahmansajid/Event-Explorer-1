@@ -1,79 +1,39 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const Header = () => {
-//   return (
-//     <header className="bg-[#0073A5] text-white py-4 shadow-lg">
-//       <div className="container mx-auto flex justify-between items-center">
-//         {/* Logo */}
-//         <h1 className="text-2xl font-bold">
-//           <Link to="/" className="hover:text-gray-300">
-//             Career Counseling
-//           </Link>
-//         </h1>
-
-//         {/* Navigation */}
-//         <nav>
-//           <ul className="flex gap-6">
-//             <li>
-//               <Link
-//                 to="/"
-//                 className="hover:text-gray-300 transition-colors duration-200"
-//               >
-//                 Home
-//               </Link>
-//             </li>
-//             <li>
-//               <Link
-//                 to="/services"
-//                 className="hover:text-gray-300 transition-colors duration-200"
-//               >
-//                 Services
-//               </Link>
-//             </li>
-//             <li>
-//               <Link
-//                 to="/profile"
-//                 className="hover:text-gray-300 transition-colors duration-200"
-//               >
-//                 My Profile
-//               </Link>
-//             </li>
-//           </ul>
-//         </nav>
-
-//         {/* Login/Logout Button */}
-//         <div>
-//           <Link
-//             to="/login"
-//             className="bg-[#FFA500] text-white px-4 py-2 rounded-md hover:bg-orange-600 transition-all"
-//           >
-//             Login
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
+  // In a real implementation with react-router, you would use Link components
+  // For this demonstration, we'll use regular anchor tags
   return (
-    <header className="bg-white text-cyan-700 py-6 shadow-lg">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
+    <header className="relative bg-black text-white py-6 shadow-lg">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+      
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{
+          backgroundImage: `url('https://i.ibb.co.com/pvKdJBtK/about-card-3-1.jpg')`, // Replace with your corrected image URL
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+      ></div>
+      
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 relative z-20">
         <div className="text-center w-10/12 mx-auto py-32 flex flex-col gap-4">
-          <h1 className="text-6xl font-font uppercase font-extrabold">
-            Shape Your Future <br /> with Expert Career Guidance
+          <h1 className="text-6xl font-sans uppercase font-extrabold text-white drop-shadow-lg">
+            Discover Your City's <br /> Vibrant Events
           </h1>
-          <p className="mt-2">
-            From personalized career advice to skill development workshops, we provide the tools and support you need to achieve your dreams and succeed in the competitive job market.
+          <p className="mt-2 text-white text-lg drop-shadow-md max-w-3xl mx-auto">
+            Find and experience local events tailored to your interests. Where local meets extraordinary, uncover hidden gems in your area and embark on a journey of experiences.
           </p>
           <div className="mt-6">
-            <Link to="/services" className=" bg-cyan-700 text-white px-6 py-3 rounded-md hover:bg-cyan-600 transition-all text-lg font-semibold"> Explore Services </Link>
+            <a 
+              href="/services" 
+              className="bg-purple-700 text-white px-6 py-3 rounded-md hover:bg-purple-600 transition-all text-lg font-semibold shadow-lg hover:shadow-xl"
+            >
+              Explore Events
+            </a>
           </div>
         </div>
       </div>
