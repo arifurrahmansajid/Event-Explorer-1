@@ -15,7 +15,7 @@ const EventsSlider = () => {
       id: 2,
       title: "Contemporary Dance Showcases",
       description: "Witness the beauty of movement with cutting-edge choreography that pushes artistic boundaries. Our dance events feature both established companies and emerging talent, presenting pieces that blend traditional techniques with innovative artistic expression.",
-      color: "bg-rose-600",
+      color: "bg-purple-700",
       icon: "💃"
     },
     {
