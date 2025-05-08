@@ -10,6 +10,7 @@ import Profile from '../components/Profile';
 import MainRoutes from './MainRoutes';
 import Program from '../components/Program';
 import ForgetPassword from '../pages/ForgetPassword';
+import EventDetails from '../components/EventDetails';
 
 const routes = createBrowserRouter([
   {
@@ -29,8 +30,8 @@ const routes = createBrowserRouter([
         element: ( <PrivateRoute> <Program/> </PrivateRoute> ),
       },
       {
-        path: "/services/:id",
-        element: ( <PrivateRoute> <ServiceDetails /> </PrivateRoute>),
+        path: "/events/:id",
+        element: ( <PrivateRoute> <EventDetails /> </PrivateRoute>),
       },
       {
         path: "/profile",
