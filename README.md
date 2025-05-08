@@ -1,6 +1,6 @@
 # Event Explorer 🎟️
 
-![Event Explorer Banner](https://i.ibb.co.com/V0HbN8y6/Screenshot-2025-05-08-234422.png)
+
 
 ## 🌟 About
 **Event Explorer** is a dynamic event discovery platform that connects users with exciting events across multiple categories including music festivals, sports tournaments, tech conferences, art exhibitions, and more.
