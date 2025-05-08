@@ -12,4 +12,4 @@ A professional Career counseling platform designed to help users with career gui
 - **User Authentication**: Secure login and registration using Firebase Authentication.
 - **Dynamic User Profiles**: Users can update their profiles with photos and display names.
 - **Responsive Design**: The website adapts perfectly across all devices.
-- **Rich Content**: Includes impactful blogs, testimonials, and success stories.
+- **Rich Content**: Includes impactful blogs
