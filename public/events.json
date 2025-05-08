@@ -1,0 +1,75 @@
+
+[
+  {
+    "id": "event_001",
+    "name": "Tech Innovators Conference",
+    "thumbnail": "https://i.ibb.co.com/Wp0rqnDb/th.jpg",
+    "category": "Technology",
+    "date": "2025-05-15",
+    "time": "9:00 AM - 5:00 PM",
+    "location": "Dhaka Convention Center",
+    "entry_fee": 500,
+    "description": "Join tech leaders and innovators to discuss the future of technology and network with industry professionals.",
+    "seats": 150
+  },
+  {
+    "id": "event_002",
+    "name": "Dhaka Food Festival",
+    "thumbnail": "https://i.ibb.co.com/zhC01mWb/11-facts-about-food-festival-1693051143.jpg",
+    "category": "Food & Drink",
+    "date": "2025-06-20",
+    "time": "11:00 AM - 10:00 PM",
+    "location": "Suhrawardy Udyan",
+    "entry_fee": 200,
+    "description": "Experience diverse culinary delights with over 100 food stalls and live cooking demonstrations.",
+    "seats": 500
+  },
+  {
+    "id": "event_003",
+    "name": "Bangla Rock Music Festival",
+    "thumbnail": "https://i.ibb.co.com/jZDx3XhL/Fossils-1-640.jpg",
+    "category": "Music",
+    "date": "2025-07-12",
+    "time": "4:00 PM - 11:00 PM",
+    "location": "Army Stadium",
+    "entry_fee": 800,
+    "description": "The biggest rock music festival featuring top local bands and international artists.",
+    "seats": 10000
+  },
+  {
+    "id": "event_004",
+    "name": "Startup Pitch Competition",
+    "thumbnail": "https://i.ibb.co.com/whrMRdgL/OIP.jpg",
+    "category": "Business",
+    "date": "2025-08-05",
+    "time": "10:00 AM - 4:00 PM",
+    "location": "Bangabandhu ICC",
+    "entry_fee": 0,
+    "description": "Emerging startups compete for funding and mentorship opportunities.",
+    "seats": 300
+  },
+  {
+    "id": "event_005",
+    "name": "Traditional Arts Exhibition",
+    "thumbnail": "https://i.ibb.co.com/GvW9yH3V/th-1.jpg",
+    "category": "Art & Culture",
+    "date": "2025-09-18",
+    "time": "9:00 AM - 8:00 PM",
+    "location": "National Museum",
+    "entry_fee": 100,
+    "description": "Showcasing Bangladesh's rich cultural heritage through traditional arts and crafts.",
+    "seats": 200
+  },
+  {
+    "id": "event_006",
+    "name": "Charity Marathon 2025",
+    "thumbnail": "https://i.ibb.co.com/Wv78czz3/th-2.jpg",
+    "category": "Sports",
+    "date": "2025-10-10",
+    "time": "6:00 AM - 12:00 PM",
+    "location": "Hatirjheel",
+    "entry_fee": 300,
+    "description": "Annual charity run to raise funds for children's education with multiple race options.",
+    "seats": 5000
+  }
+]
