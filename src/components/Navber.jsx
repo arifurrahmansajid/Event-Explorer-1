@@ -49,6 +49,16 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
+                  to="/program"
+                  className={({ isActive }) => 
+                    isActive ? "bg-purple-500 text-white" : "text-white hover:bg-purple-500"
+                  }
+                >
+                  Our Program
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/profile"
                   className={({ isActive }) => 
                     isActive ? "bg-purple-500 text-white" : "text-white hover:bg-purple-500"
@@ -75,6 +85,9 @@ const Navbar = () => {
         <nav className="navbar-center hidden lg:flex gap-6">
           <NavLink to="/" className={navLinkClass}>
             Home
+          </NavLink>
+          <NavLink to="/program" className={navLinkClass}>
+            Our Program
           </NavLink>
           <NavLink to="/profile" className={navLinkClass}>
             My Profile

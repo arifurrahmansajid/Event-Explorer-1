@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,21 +20,17 @@ const Footer = () => {
               Your gateway to unforgettable experiences. Discover, book, and enjoy events near you.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-purple-300 transition-colors">
-                <FaFacebook size={20} />
+              <a href="https://github.com/arifurrahmansajid" className="text-white hover:text-purple-300 transition-colors">
+                <FaGithub size={20} />
               </a>
-              <a href="#" className="text-white hover:text-purple-300 transition-colors">
+              <a href="https://x.com/ArifurSaji18609" className="text-white hover:text-purple-300 transition-colors">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-white hover:text-purple-300 transition-colors">
-                <FaInstagram size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-purple-300 transition-colors">
+             
+              <a href="https://www.linkedin.com/in/arifursajid3456/" className="text-white hover:text-purple-300 transition-colors">
                 <FaLinkedin size={20} />
               </a>
-              <a href="#" className="text-white hover:text-purple-300 transition-colors">
-                <FaYoutube size={20} />
-              </a>
+              
             </div>
           </div>
 
