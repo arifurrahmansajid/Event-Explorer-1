@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 export const AuthContext = createContext();
 
 const googleProvider = new GoogleAuthProvider();
-const githubProvider = new GithubAuthProvider();
+
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

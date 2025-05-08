@@ -120,10 +120,11 @@ const Register = () => {
               </svg>
               Register with google
             </button>
-            <button onClick={handleGithubSignIn} type="button" class="w-full flex items-center justify-center gap-4 py-2.5 px-4 text-sm tracking-wide font-bold text-gray-800 border border-gray-300 rounded-md bg-transparent hover:bg-gray-50 focus:outline-none">
+           {/*  <button onClick={handleGithubSignIn} type="button" class="w-full flex items-center justify-center gap-4 py-2.5 px-4 text-sm tracking-wide font-bold text-gray-800 border border-gray-300 rounded-md bg-transparent hover:bg-gray-50 focus:outline-none">
               <div className="text-xl"> <FaGithub></FaGithub> </div>
               Register with github
             </button>
+            */}
             <div class="mt-6 flex items-center gap-4">
               <hr class="w-full border-gray-300" />
               <p class="text-sm text-gray-800 text-center">or</p>

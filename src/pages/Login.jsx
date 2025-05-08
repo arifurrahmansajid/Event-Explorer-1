@@ -9,8 +9,8 @@ import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { userLogin, setUser, logInWithGoogle, logInWithGithub } = useContext(AuthContext);
-  const [ error, setError ] = useState([]);
-  const [ email, setEmail ] = useState("")
+  const [error, setError] = useState([]);
+  const [email, setEmail] = useState("")
   const location = useLocation();
   const navigate = useNavigate();
   const emailRef = useRef();
@@ -41,11 +41,11 @@ const Login = () => {
 
   const handleGithubSignIn = () => {
     logInWithGithub()
-    .then(result => {
-      console.log(result.user);
-      navigate(from, { replace: true });
-    })
-    .catch(error => console.log('ERROR', error.message))
+      .then(result => {
+        console.log(result.user);
+        navigate(from, { replace: true });
+      })
+      .catch(error => console.log('ERROR', error.message))
   }
 
   const handleSubmit = (e) => {
@@ -54,14 +54,14 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     userLogin(email, password)
-    .then((result) => {
-      const user = result.user;
-      setUser(user);
-      navigate(from, { replace: true });
-    })
-    .catch((err) => {
-      setError(handleErrorMessage(err.code));
-    })
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        navigate(from, { replace: true });
+      })
+      .catch((err) => {
+        setError(handleErrorMessage(err.code));
+      })
   }
 
   const handleForgotPassword = () => {
@@ -101,10 +101,12 @@ const Login = () => {
               </svg>
               Log in with google
             </button>
-            <button onClick={handleGithubSignIn} type="button" class="w-full flex items-center justify-center gap-4 py-2.5 px-4 text-sm tracking-wide font-bold text-gray-800 border border-gray-300 rounded-md bg-transparent hover:bg-gray-50 focus:outline-none">
-              <div className="text-xl"> <FaGithub></FaGithub> </div>
-              Log in with github
-            </button>
+            {/*
+<button onClick={handleGithubSignIn} type="button" class="w-full flex items-center justify-center gap-4 py-2.5 px-4 text-sm tracking-wide font-bold text-gray-800 border border-gray-300 rounded-md bg-transparent hover:bg-gray-50 focus:outline-none">
+  <div className="text-xl"> <FaGithub></FaGithub> </div>
+  Log in with github
+</button>
+*/}
             <div class="mt-6 flex items-center gap-4">
               <hr class="w-full border-gray-300" />
               <p class="text-sm text-gray-800 text-center">or</p>
@@ -115,10 +117,10 @@ const Login = () => {
                 <span className="label-text">Email</span>
               </label>
               <input
-                ref={emailRef} 
+                ref={emailRef}
                 name="email"
                 type="email"
-                onChange={(e) => setEmail(e.target.value)} 
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="email" className="input input-bordered"
                 required />
             </div>
@@ -126,7 +128,7 @@ const Login = () => {
               <label className="label">
                 <span className="label-text"> Password </span>
               </label>
-              <input  name="password" type="password" placeholder="password" className="input input-bordered" required />
+              <input name="password" type="password" placeholder="password" className="input input-bordered" required />
               {
                 error.login && (
                   <label className="label text-sm text-red-600">
@@ -142,7 +144,7 @@ const Login = () => {
               <button className="btn bg-[#0B3169] hover:bg-blue-800 text-white rounded-md"> Login </button>
             </div>
           </form>
-          <p class="text-gray-800 text-sm flex items-center justify-center">Don't have an account 
+          <p class="text-gray-800 text-sm flex items-center justify-center">Don't have an account
             <Link to="/register" class="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"> Register here </Link>
           </p>
         </div>
