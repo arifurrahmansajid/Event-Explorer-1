@@ -72,11 +72,7 @@ const Navbar = () => {
           
           {/* Logo and brand name */}
           <Link to="/" className="flex items-center gap-2">
-            <img
-              className="w-10 h-10"
-              src="https://i.ibb.co.com/RTZDh9y/CC.png"
-              alt="Event Explorer Logo"
-            />
+            
             <h2 className="text-xl font-bold text-white">Event Explorer</h2>
           </Link>
         </div>

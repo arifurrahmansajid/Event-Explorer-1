@@ -9,11 +9,7 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="space-y-4">
             <Link to="/" className="text-3xl font-bold flex items-center">
-            <img
-              className="w-10 h-10"
-              src="https://i.ibb.co.com/RTZDh9y/CC.png"
-              alt="Event Explorer Logo"
-            />
+            
               <span className="ml-3">EventExplorer</span>
             </Link>
             <p className="text-purple-200">
