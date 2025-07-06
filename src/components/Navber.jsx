@@ -6,9 +6,9 @@ const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   // Function to handle active nav links
-  const navLinkClass = ({ isActive }) => 
-    isActive 
-      ? "text-white font-bold" 
+  const navLinkClass = ({ isActive }) =>
+    isActive
+      ? "text-white font-bold"
       : "text-purple-200 hover:text-white transition-colors font-medium";
 
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="navbar-start">
           {/* Mobile menu button */}
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 text-white"
@@ -32,7 +32,7 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
+            </label>
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-purple-700 rounded-box w-52 gap-1"
@@ -40,8 +40,10 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/"
-                  className={({ isActive }) => 
-                    isActive ? "bg-purple-500 text-white" : "text-white hover:bg-purple-500"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-purple-500 text-white"
+                      : "text-white hover:bg-purple-500"
                   }
                 >
                   Home
@@ -50,8 +52,10 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/program"
-                  className={({ isActive }) => 
-                    isActive ? "bg-purple-500 text-white" : "text-white hover:bg-purple-500"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-purple-500 text-white"
+                      : "text-white hover:bg-purple-500"
                   }
                 >
                   Our Program
@@ -60,8 +64,10 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/profile"
-                  className={({ isActive }) => 
-                    isActive ? "bg-purple-500 text-white" : "text-white hover:bg-purple-500"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-purple-500 text-white"
+                      : "text-white hover:bg-purple-500"
                   }
                 >
                   My Profile
@@ -69,14 +75,13 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Logo and brand name */}
           <Link to="/" className="flex items-center gap-2">
-            
             <h2 className="text-xl font-bold text-white">Event Explorer</h2>
           </Link>
         </div>
-        
+
         {/* Desktop navigation */}
         <nav className="navbar-center hidden lg:flex gap-6">
           <NavLink to="/" className={navLinkClass}>
@@ -89,7 +94,7 @@ const Navbar = () => {
             My Profile
           </NavLink>
         </nav>
-        
+
         {/* User controls */}
         <div className="navbar-end gap-2">
           {user ? (
@@ -101,7 +106,7 @@ const Navbar = () => {
               >
                 Logout
               </button>
-              
+
               {/* User avatar dropdown */}
               <div className="dropdown dropdown-end">
                 <div
@@ -112,7 +117,10 @@ const Navbar = () => {
                   <div className="w-10 rounded-full relative group">
                     <img
                       alt="User Profile"
-                      src={user?.photoURL || "https://i.ibb.co.com/5vkd0X7/default-avatar.png"}
+                      src={
+                        user?.photoURL ||
+                        "https://i.ibb.co.com/5vkd0X7/default-avatar.png"
+                      }
                       referrerPolicy="no-referrer"
                     />
                     {/* Tooltip for user name on hover */}
@@ -123,7 +131,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Dropdown menu */}
                 <ul
                   tabIndex={0}
@@ -132,7 +140,10 @@ const Navbar = () => {
                   <div className="flex flex-col items-center">
                     <img
                       className="w-16 h-16 rounded-full mb-2 border-2 border-white"
-                      src={user?.photoURL || "https://i.ibb.co.com/5vkd0X7/default-avatar.png"}
+                      src={
+                        user?.photoURL ||
+                        "https://i.ibb.co.com/5vkd0X7/default-avatar.png"
+                      }
                       alt="Profile"
                       referrerPolicy="no-referrer"
                     />
@@ -142,7 +153,7 @@ const Navbar = () => {
                     <p className="text-purple-100 text-sm text-center">
                       {user?.email}
                     </p>
-                    
+
                     <div className="flex flex-col w-full mt-3 space-y-2">
                       <Link
                         to="/profile"
